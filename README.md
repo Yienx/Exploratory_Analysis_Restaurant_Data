@@ -198,7 +198,10 @@ LEFT JOIN menu_items mi
 ON od.item_id = mi.menu_item_id  -- Italian dishes are the most prefered for this client. 
 Where order_id = 440
 ORDER BY category;
+
 ```
+![440_order](https://github.com/user-attachments/assets/8a3b93d8-d542-448e-8d98-cb2f7f5396c2)
+
 - Though this clients orders from different food category, the Italian dishes are still the most prefered.
 
 **10. View the details of the Top 5 highest spend orders. What insights can you gather?**
