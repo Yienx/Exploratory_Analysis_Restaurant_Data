@@ -1,6 +1,6 @@
-## Exploratory_Analysis_Restaurant_Data
+## SQL Project: $\color{Orange}{\text{Exploratory Data Analysis On Restaurant Dataset}}$: 
 
-**$\color{blue}{\text{TABLE OF CONTENTS}}$**
+**$\color{Orange}{\text{TABLE OF CONTENTS}}$**
 
 - [Introduction](#INTRODUCTION)
 - [Exploring Menu Items Data](#Exploring-the-Menu-Items-Data)
