@@ -25,12 +25,14 @@ The `menu_items data` has four fields consisting of:
 * Category: category of the item (American dish, Italian dish, etc)
 * Price: price of the item. 
 
-**1. Checking the number of rows in the data.**
+**1. Checking the number of menu in the menu_items data.**
 
 ```
-SELECT Count(*) from menu_items;  -- There are 32 rows in this table
+SELECT Count(*) from menu_items;  
 ```
 ![count_menu](https://github.com/user-attachments/assets/2f692da0-8562-4877-b50c-5799508042fc)
+
+- There are 32 different menu in this table
 
 **2. What is the least expensive menu on the list?**
 ```
@@ -60,7 +62,7 @@ group by category;
 ```
 ![category_count](https://github.com/user-attachments/assets/7342ddac-4ebc-46a2-98d0-6b40c2189379)
 
-- Looking at the above display, it is observed that the  `Italian Food Category` is the most expensive with an Average price of $16.75, however American food menu is the least expensive with an Average price of $10.06.
+- Looking at the above display, it is observed that the  `Italian Food Category` is the most expensive with an Average price of $16.75, while American food menu is the least expensive with an Average price of $10.06.
 
 #### Exploring the Order Details Data
 
@@ -79,17 +81,19 @@ The order details data shows the details of ordering and what customers are orde
 
 **1. What is the order dateperiod / range**
 ```
-SELECT MIN(order_date), MAX(order_date) from order_details;
+SELECT MIN(order_date), MAX(order_date)
+FROM order_details;
 ```
 
 ![min_max_date](https://github.com/user-attachments/assets/d47546dc-41f3-4a9f-8138-0f3e4b7accdf)
 
 - This data dates from `2023-01-01` to `2023-03-31` (1st Quarter of 2023). 
-- All orders during this period will be used for analysis.
+- All orders during this period is what is used for this analysis.
 
 **2. How many unique items were ordered within this period?**
 ```
-SELECT	COUNT(distinct order_id)  AS unique_orders FROM order_details;
+SELECT	COUNT(distinct order_id)  AS unique_orders
+FROM order_details;
 ```
 ![unique_orders](https://github.com/user-attachments/assets/527fb0f5-bc18-4ce8-825f-683a25bae1cd)
 
@@ -216,4 +220,12 @@ GROUP BY category;
 ![top_5_category](https://github.com/user-attachments/assets/4125d391-d4f4-44ae-bc99-b05752c505f8)
 
 ### Insights From Analysis
-1. 
+1. Italian dishes are the most expensive dishes on the menu with an average price of $16.75. It is also the most ordered by the Top paying client.
+2. Italian dishes were also ordered 26 times by the Top 5 high paying clients.
+3. American Dish (Hamburgers) and Asian dish (Edamame) are the most ordered dishes for this period.
+4. American dishes are the least expensive with an average price of $10.06
+
+### Recommendations
+1. Shrimp Scampi, which is the most expensive dish is not well ordered by client. Stakeholders can look into this menu to revise it. They can further do a customer response analyses on this menu to know this Italian Dish is not moving like the others.
+2. The least ordered item is Chicken Tacos. Stakeholders can consider pairing this item with other items like fries, burgers, etc as a combo menu to attract more customers to purchase. 
+3. The total number of orders in the first quarter was 12,097 which is a good number. Stakeholders can use this opportunity to drive more traffic into their restaurant by introducing special orders once a week. For instance, buy 1 get one free, discounted prices, etc. 
