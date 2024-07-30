@@ -1,4 +1,4 @@
-## SQL Project: $\color{Orange}{\text{Exploratory Data Analysis On Restaurant Dataset}}$: 
+# SQL Project: $\color{Orange}{\text{Exploratory Data Analysis On Restaurant Dataset}}$: 
 
 **$\color{Orange}{\text{TABLE OF CONTENTS}}$**
 
@@ -8,7 +8,7 @@
 - [Insights from Analysis](#Insights-From-Analysis)
 - [Recommendations](#Recommendations)
 
-## INTRODUCTION
+# INTRODUCTION
 This is an exploratory Data Analysis in MySQL on Restaurant Order Data. This dataset comprise of two data;
 1. Menu Items Data
 2. Order Details Data
@@ -17,7 +17,7 @@ This dataset was got from [Maven Analytics Data Playground](https://mavenanalyti
 #### Purpose: 
 The purpose of this analysis is to explore the restaurant data in `MYSQL` and to discover consumer behaviour towards ordering in a restaurant. 
 
-#### Exploring the Menu Items Data
+### Exploring the Menu Items Data
 
 ```
 USE restaurant_db;
@@ -72,7 +72,7 @@ group by category;
 
 - Looking at the above display, it is observed that the  `Italian Food Category` is the most expensive with an Average price of $16.75, while American food menu is the least expensive with an Average price of $10.06.
 
-#### Exploring the Order Details Data
+### Exploring the Order Details Data
 
 -- View the order_details table
 
@@ -126,7 +126,7 @@ ORDER BY num_items DESC;
 
 * It can be observed that order_ids `4305`, `3473`, `1957`, `330`, `440`, `443`, and `2675`  ordered the most number of items (14) within this given period. We can explore what was ordered a little further below:
 
-##### COMBINNING BOTH TABLES (MENU_ITEMS & ORDER_DETAILS)
+#### COMBINNING BOTH TABLES (MENU_ITEMS & ORDER_DETAILS)
 SELECT * FROM menu_items;
 SELECT * FROM order_details;
 -- THEIR UNIQUE ID IS THE ITEM_ID.
