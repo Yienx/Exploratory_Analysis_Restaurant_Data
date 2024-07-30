@@ -1,5 +1,11 @@
 ## Exploratory_Analysis_Restaurant_Data
 
+**$\color{blue}{\text{TABLE OF CONTENTS}}$**
+
+- [Introduction](#INTRODUCTION)
+- [Data Source](#Data_Source)
+- [Recommendations](#Recommendations)
+
 ## INTRODUCTION
 This is an exploratory Data Analysis in MySQL on Restaurant Order Data. This dataset comprise of two data;
 1. Menu Items Data
