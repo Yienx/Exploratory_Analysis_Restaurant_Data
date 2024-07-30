@@ -8,7 +8,7 @@
 - [Insights from Analysis](#Insights-From-Analysis)
 - [Recommendations](#Recommendations)
 
-# INTRODUCTION
+## INTRODUCTION
 This is an exploratory Data Analysis in MySQL on Restaurant Order Data. This dataset comprise of two data;
 1. Menu Items Data
 2. Order Details Data
