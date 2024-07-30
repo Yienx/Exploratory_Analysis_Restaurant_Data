@@ -3,7 +3,9 @@
 **$\color{blue}{\text{TABLE OF CONTENTS}}$**
 
 - [Introduction](#INTRODUCTION)
-- [Data Source](#Data_Source)
+- [Exploring Menu Items Data](#Exploring_the_Menu_Items_Data)
+- [Exploring Order Details Data](#Exploring_the_Order_Details_Data)
+- [Insights from Analysis](#Insights_from_Analysis)
 - [Recommendations](#Recommendations)
 
 ## INTRODUCTION
